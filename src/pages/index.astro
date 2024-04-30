@@ -1,0 +1,26 @@
+---
+import { Sidebar } from "../components/sidebar";
+import { SidebarReponsive } from "../components/sidebar-responsive";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Martin Aguayo Site!">
+  <main>
+    <nav class="flex justify-end">Iconos</nav>
+
+    <div class="hidden sm:flex items-center gap-x-6">
+      <Sidebar />
+      <section class="z-50">
+        <div class="bg-[silver] w-[400px] h-[400px]"></div>
+      </section>
+    </div>
+
+    <!-- Responsive Desing -->
+    <div class="relative sm:hidden md:hidden flex items-center justify-center">
+      <SidebarReponsive />
+      <section class="z-52 absolute top-0 bottom-auto left-4 w-full">
+        <div class="bg-[silver] w-[400px] h-[400px]"></div>
+      </section>
+    </div>
+  </main>
+</Layout>
