@@ -4,6 +4,13 @@ export default {
 	theme: {
 		extend: {
 		},
+		// colors: {
+		// 	primary: {
+		// 		default: '',
+		// 		hover: '',
+
+		// 	}
+		// }
 	},
 	plugins: [],
 }

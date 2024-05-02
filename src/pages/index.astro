@@ -1,26 +1,16 @@
 ---
 import { Sidebar } from "../components/sidebar";
-import { SidebarReponsive } from "../components/sidebar-responsive";
+import { Window } from "../components/window";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Martin Aguayo Site!">
   <main>
-    <nav class="flex justify-end">Iconos</nav>
+    <nav class="flex justify-end mr-[2rem]">Iconos</nav>
 
-    <div class="hidden sm:flex items-center gap-x-6">
+    <div class="flex gap-x-20 pt-12 px-4 w-full">
       <Sidebar />
-      <section class="z-50">
-        <div class="bg-[silver] w-[400px] h-[400px]"></div>
-      </section>
-    </div>
-
-    <!-- Responsive Desing -->
-    <div class="relative sm:hidden md:hidden flex items-center justify-center">
-      <SidebarReponsive />
-      <section class="z-52 absolute top-0 bottom-auto left-4 w-full">
-        <div class="bg-[silver] w-[400px] h-[400px]"></div>
-      </section>
+      <Window label="Work" />
     </div>
   </main>
 </Layout>
