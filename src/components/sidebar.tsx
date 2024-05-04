@@ -39,7 +39,7 @@ export const Sidebar = () => {
           </a>
         </li>
         <li className="section">
-          <a href="/" className="space-y-1.5">
+          <a href="#contact" className="space-y-1.5">
             <img
               src="/assets/contact-w98.png"
               alt="Work"
@@ -51,10 +51,10 @@ export const Sidebar = () => {
           </a>
         </li>
         <li className="section">
-          <a href="/" className="space-y-1.5">
+          <a href="#cv" className="space-y-1.5">
             <img
               src="/assets/cv-w98.png"
-              alt="Work"
+              alt="Cv"
               className="h-12 w-12 m-auto"
             />
             <h2 className="text-sm text-center hover:bg-blue-900 hover:text-white">

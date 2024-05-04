@@ -14,7 +14,7 @@ export const ProjectSection = ({
 }: ProjectSectionProps) => {
   return (
     <div className="flex flex-col gap-y-1">
-      <h2 className="text-sm font-serif font-bold">{label}</h2>
+      <h2 className="text-lg font-serif font-bold">{label}</h2>
       <div className="flex gap-x-6 cursor-grab ml-3 overflow-x-clip overflow-y-hidden items transition scroll-smooth">
         {projects.map((project) => (
           <ProjectItems

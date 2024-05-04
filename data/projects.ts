@@ -24,7 +24,7 @@ export const projectsWork = [
   },
   {
     id: '3',
-    name: 'LMS (Learning Management System) platform',
+    name: 'LMS platform',
     description: 'Courses, Chapters, Payload, managment, User management, Admin Panel, and more..',
     images: [
       'https://via.placeholder.com/400?text=LMS+Platform+Image+1',
@@ -35,7 +35,7 @@ export const projectsWork = [
   },
   {
     id: '4',
-    name: 'LMS (Learning Management System) platform',
+    name: 'LMS platform',
     description: 'Courses, Chapters, Payload, managment, User management, Admin Panel, and more..',
     images: [
       'https://via.placeholder.com/400?text=LMS+Platform+Image+1',
@@ -46,7 +46,7 @@ export const projectsWork = [
   },
   {
     id: '5',
-    name: 'LMS (Learning Management System) platform',
+    name: 'LMS platform',
     description: 'Courses, Chapters, Payload, managment, User management, Admin Panel, and more..',
     images: [
       'https://via.placeholder.com/400?text=LMS+Platform+Image+1',

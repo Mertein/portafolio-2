@@ -32,7 +32,7 @@ export const ProjectItems = ({
         />
         <img />
       </div>
-      <p className="text-sm break-words">{title}</p>
+      <p className="break-words text-center w-fit">{title}</p>
     </div>
   );
 };
