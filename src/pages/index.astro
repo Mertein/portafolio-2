@@ -2,13 +2,24 @@
 import { Sidebar } from "../components/sidebar";
 import { Window } from "../components/window";
 import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Welcome to Martin Aguayo Site!">
   <main>
-    <nav class="flex justify-end mr-[2rem]">Iconos</nav>
+    <nav
+      class="flex justify-center w-screen items-end md:justify-end md:ml-0 md:pr-[2rem] mt-4"
+    >
+      <Image
+        src="/assets/picture-w98.png"
+        alt="Icono"
+        width={30}
+        height={30}
+        class="cursor-pointer hover:scale-110"
+      />
+    </nav>
 
-    <div class="flex gap-x-20 pt-12 px-4 w-full">
+    <div class="flex gap-x-20 pt-12 px-4 w-screen">
       <Sidebar />
       <Window label="Work" />
     </div>

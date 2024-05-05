@@ -6,7 +6,7 @@ interface WindowProps {
 
 export const Window = ({ label }: WindowProps) => {
   return (
-    <section className="absolute top-24 bottom-0 left-0 right-0 bg-[silver] border-[silver] w-full md:w-full md:static  border-2 border-t-white border-l-white border-b-black border-r-black">
+    <section className="absolute top-20 bottom-0 left-0 right-0 bg-[silver] border-[silver] w-full md:static  border-2 border-t-white border-l-white border-b-black border-r-black">
       <div className="flex sticky top-0 w-full justify-between items-center px-1 py-1 border-2 border-solid border-[silver] bg-[rgb(1,0,129)] text-white">
         <h1 className="text-xl pl-2 md:text-sm">{label}</h1>
         <div className="flex gap-x-1 mr-1 ">

@@ -29,7 +29,7 @@ export const Work = ({}: WorkProps) => {
       {/* Content rigth side */}
       <section className="hidden relative md:flex flex-col w-[60%] h-[100%] p-0 border-l-2 border-solid border-l-black">
         <div className="h-[40%] bg-gradient-to-b from-emerald-200 to-pink-200 " />
-        <div className="relative bg-chessboard h-[60%] bg-cover bg-bottom after:absolute after:inset-0 after:bg-gradient-to-b after:from-pink-200 after:via-transparent after:to-transparent   " />
+        <div className="relative bg-chessboard h-[60%] bg-cover bg-bottom after:absolute after:inset-0 after:bg-gradient-to-b after:from-pink-200 after:via-transparent after:to-transparent" />
 
         {/* TODO: Renderizar solo si IsOpen dialog*/}
         <div className="absolute top-0 right-0 left-0 bottom-0 m-auto h-48 w-[25rem] lg:w-[31.25rem] max-w-[31.25rem] border-solid border-2 border-t-white border-l-white border-b-black border-r-black">
