@@ -8,18 +8,18 @@ import { Image } from "astro:assets";
 <Layout title="Welcome to Martin Aguayo Site!">
   <main>
     <nav
-      class="flex justify-center w-screen items-end md:justify-end md:ml-0 md:pr-[2rem] mt-4"
+      class="flex justify-center items-end md:justify-end md:ml-0 md:pr-[0.5rem] h-8 w-full"
     >
       <Image
         src="/assets/picture-w98.png"
         alt="Icono"
-        width={30}
-        height={30}
+        width={25}
+        height={25}
         class="cursor-pointer hover:scale-110"
       />
     </nav>
 
-    <div class="flex gap-x-20 pt-12 px-4 w-screen">
+    <div class="flex gap-x-10 mt-2">
       <Sidebar />
       <Window label="Work" />
     </div>

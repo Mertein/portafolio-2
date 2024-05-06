@@ -6,8 +6,8 @@ interface WindowProps {
 
 export const Window = ({ label }: WindowProps) => {
   return (
-    <section className="absolute top-20 bottom-0 left-0 right-0 bg-[silver] border-[silver] w-full md:static  border-2 border-t-white border-l-white border-b-black border-r-black">
-      <div className="flex sticky top-0 w-full justify-between items-center px-1 py-1 border-2 border-solid border-[silver] bg-[rgb(1,0,129)] text-white">
+    <section className="absolute top-20 bottom-0 left-0 right-0 bg-[silver] border-[silver] md:static md:w-[92%] md:h-full   border-2 border-t-white border-l-white border-b-black border-r-black ">
+      <div className="flex w-full justify-between items-center px-1 py-1 border-2 border-solid border-[silver] bg-[rgb(1,0,129)] text-white">
         <h1 className="text-xl pl-2 md:text-sm">{label}</h1>
         <div className="flex gap-x-1 mr-1 ">
           <button type="button">
@@ -28,7 +28,7 @@ export const Window = ({ label }: WindowProps) => {
         </div>
       </div>
 
-      <div className="border-2 border-solid shadow-md border-black bg-white m-[1rem] h-[90%] sm:h-[41.5rem] md:h-[40rem] overflow-auto">
+      <div className="border-2 border-solid shadow-md border-black bg-white m-[1rem] h-[90%] sm:h-[41.5rem] md:h-[36rem] overflow-auto">
         {/* TODO: Render components with conditionals "Work" "About" "Contact" "CV" */}
         {<Work />}
       </div>
