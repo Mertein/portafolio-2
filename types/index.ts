@@ -1,4 +1,4 @@
-type Projects = {
+type Project = {
   id: string;
   name: string;
   description: string;
@@ -7,4 +7,4 @@ type Projects = {
 }
 
 
-export type { Projects };
+export type { Project };

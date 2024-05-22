@@ -1,16 +1,18 @@
-import type { Projects } from "../../types";
+import type { Project } from "../../types";
 import { ProjectItems } from "./projec-items";
 
 interface ProjectSectionProps {
-  projects: Projects[];
+  projects: Project[];
   label: string;
   folderImage: string;
+  setSelectProject?: (project: Project) => void;
 }
 
 export const ProjectSection = ({
   label,
   projects,
   folderImage,
+  setSelectProject,
 }: ProjectSectionProps) => {
   return (
     <div className="flex flex-col gap-y-1">
@@ -19,9 +21,14 @@ export const ProjectSection = ({
         {projects.map((project) => (
           <ProjectItems
             key={project.id}
-            images={project.images[0]}
+            id={project.id}
+            url={project.images[0]}
+            images={project.images}
             folderImage={folderImage}
             title={project.name}
+            setSelectProject={setSelectProject}
+            description={project.description}
+            link={project.link}
           />
         ))}
       </div>

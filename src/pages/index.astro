@@ -18,10 +18,9 @@ import { Image } from "astro:assets";
         class="cursor-pointer hover:scale-110"
       />
     </nav>
-
     <div class="flex gap-x-10 mt-2">
-      <Sidebar />
-      <Window label="Work" />
+      <Sidebar client:only="react" />
+      <Window label="Work" client:only="react" />
     </div>
   </main>
 </Layout>

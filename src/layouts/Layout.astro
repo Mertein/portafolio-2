@@ -16,29 +16,28 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
-    <slot />
-  </body>
+  <body> <slot /> </body>
+
+  <style is:global>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Work Sans", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url("../../assets/bg-window98.webp");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+    }
+
+    body,
+    html,
+    :root {
+      height: 100%;
+    }
+  </style>
 </html>
-<style is:global>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Work Sans", sans-serif;
-    scroll-behavior: smooth;
-  }
-
-  body {
-    background-image: url("../../assets/bg-window98.webp");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-  }
-
-  body,
-  html,
-  :root {
-    height: 100%;
-  }
-</style>
