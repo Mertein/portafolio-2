@@ -43,7 +43,11 @@ export const Work = () => {
         <div className="relative bg-chessboard h-[60%] bg-cover bg-bottom after:absolute after:inset-0 after:bg-gradient-to-b after:from-pink-200 after:via-transparent after:to-transparent" />
 
         {selectProject && (
-          <WorkCard url={selectProject.images} key={selectProject.link} />
+          <WorkCard
+            url={selectProject.images}
+            key={selectProject.link}
+            description={selectProject.description}
+          />
         )}
 
         {isOpenDialog && (
