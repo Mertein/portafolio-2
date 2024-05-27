@@ -9,10 +9,9 @@ import { useState } from "react";
 
 export const Work = () => {
   const [selectProject, setSelectProject] = useState<Project | null>(null);
-  console.log(selectProject);
   const isOpenDialog = useStore($isOpenDialog);
   return (
-    <div className="flex flex-row p-0 h-[100%] ">
+    <div className="flex flex-row p-0 h-[100%] overflow-hidden ">
       {/* Content left side */}
       <section className=" w-[100%] md:w-[40%] p-4 h-[100%]">
         <ProjectSection
@@ -44,9 +43,15 @@ export const Work = () => {
 
         {selectProject && (
           <WorkCard
+            id={selectProject.id}
             url={selectProject.images}
+            link={selectProject.link}
+            github={selectProject.github}
             key={selectProject.link}
             description={selectProject.description}
+            title={selectProject.name}
+            whatIDid={selectProject.whatIDid}
+            setSelectProject={setSelectProject}
           />
         )}
 

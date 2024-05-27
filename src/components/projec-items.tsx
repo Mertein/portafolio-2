@@ -1,15 +1,16 @@
 import type { Project } from "../../types";
-import { useStore } from "@nanostores/react";
 import { $isOpenDialog } from "../store/window";
 interface ProjectItemsProps {
   folderImage: string;
   title: string;
   url: string;
-  setSelectProject?: (project: Project) => void;
+  setSelectProject: (project: Project | null) => void;
   id: string;
   images: string[];
   description: string;
+  whatIDid: string;
   link: string;
+  github: string | null;
 }
 
 export const ProjectItems = ({
@@ -21,14 +22,18 @@ export const ProjectItems = ({
   url,
   description,
   link,
+  whatIDid,
+  github,
 }: ProjectItemsProps) => {
   const onClick = () => {
-    setSelectProject?.({
+    setSelectProject({
       id,
       name: title,
       images,
       description,
+      whatIDid,
       link,
+      github,
     });
     $isOpenDialog.set(false);
   };
@@ -36,7 +41,7 @@ export const ProjectItems = ({
   return (
     <div className="flex flex-col w-[7rem] min-w-[7rem] items-center mt-2">
       <div
-        className="relative scale-90 hover:scale-110 transition project"
+        className="relative scale-90 hover:scale-110 transition-all ease-out cursor-grabbing"
         role="button"
         onClick={onClick}
       >
@@ -57,7 +62,7 @@ export const ProjectItems = ({
         />
         <img />
       </div>
-      <p className="break-words text-center w-fit">{title}</p>
+      <p className="break-words text-center w-fit text-xs">{title}</p>
     </div>
   );
 };
